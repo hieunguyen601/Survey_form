@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cong Hieu Nguyen Survey Form</h1>
+    <p id="description">Thank you for taking time to help me understand more about myself</p>
+    <form action="https://formspree.io/f/xnnndalr" id="survey-form" method="POST">
+        <fieldset>
+            <label id="name-label" for="name">Enter your name<input type="text" name="name" id="name" required></label>
+            <label id="email-label" for="email">Enter your email<input type="email" name="email" id="email" required></label>
+            <label id="age-label" for="age">Enter your age <input type="number" name="age" id="age" min="7" max="110" required></label>
+            <label id="occupation-label">What option best describes your job right now?
+                <select name="occupation" id="occupation">
+                    <option value="occupation">Select</option>
+                    <option value="occupation">Student</option>
+                    <option value="occupation">Employment</option>
+                    <option value="occupation">Unemployment</option>
+                </select>
+            </label>
+            <div class="relationship_container">
+                <legend>What is your relationship with me? (required)</legend>
+                <label for="friend-label"><input type="radio" name="relationship" id="friend-label" checked>Friend</label>
+                <label for="love-label"><input type="radio" name="relationship" id="love-label">Girlfriend</label>
+                <label for="family-label"><input type="radio" name="relationship" id="family-label">Family</label>
+            </div>
+            <div class="checkbox_container">
+                <legend>What do you think about me? (required)</legend>
+                <label for="handsome"><input type="checkbox" name="look_check" id="handsome" checked>Handsome</label>
+                <label for="friendly"><input type="checkbox" name="look_check" id="friendly">Friendly</label>
+                <label for="cool"><input type="checkbox" name="look_check" id="cool">Cool</label>
+                <label for="confident-and-creative"><input type="checkbox" name="look_check" id="confident-and-creative">Confident and Creative</label>
+                <label for="funny"><input type="checkbox" name="look_check" id="funny">Funny</label>
+            </div>
+            <div class="feedback_container">
+                <label>Comment anything about me to help me improve (Optional)</label>
+                <label id="feedback" for="comment"><textarea id="bio" name="bio" rows="5" cols="90" placeholder="Hieu is a good man..."></textarea></label>
+            </div>
+            <div class="submit_button">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,126 @@
+body {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: blanchedalmond;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: darkslategray;
+}
+
+#description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+form {
+    max-width: 700px;
+    width: 90%; /* Adjusts to screen size */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(218, 184, 133);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    font-weight: bold;
+}
+
+input, select, button, textarea {
+    width: 100%; /* Ensures input fits the form */
+    box-sizing: border-box; /* Includes padding and border in width */
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+.inline {
+    display: inline-block;
+    margin: 0 0.5em;
+    vertical-align: middle;
+}
+
+.relationship_container, .checkbox_container, .feedback_container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.feedback_container textarea {
+    width: 100%; /* Stretches textarea for comments */
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.submit_button {
+    margin-top: 15px;
+    text-align: center; /* Centers the button */
+}
+
+button {
+    width: auto;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: darkslategray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+button:visited {
+    background-color: darkslategray;
+}
+
+button:active {
+    background-color: rgb(0, 0, 0);
+}
+
+#name-label, #email-label, #age-label, #occupation-label {
+    text-align: left;
+}
+
+#occupation {
+    margin-top: 10px;
+}
+
+#name, #email, #age {
+    margin-top: 10px;
+}
+
+#feedback {
+    margin-top: -15px;
+}
